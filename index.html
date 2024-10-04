@@ -11,8 +11,8 @@
 			<header>
 				<h1>Paper, Scissors, Rock Game</h1>
 			</header>
-			<article>
-				<div id="tip">
+			<section>
+				<article id="tip">
 					<h3>Rules of the game</h3>
 					<div id="rules">
 						<ul>
@@ -23,12 +23,76 @@
 						<p>If the player and the computer choose the same option, there will be a tie.</p>
 						<p>Whoever gets five points first wins.</p>
 					</div>
-				</div>
-			</article>
+				</article>
+				<article id="game">
+					<h3 id="msg">Try to beat the computer.</h3>
+					<div id="s">
+						<ul>
+							<li class="left">You: <span id="playerChoice"></span></li>
+							<li class="right">Computer: <span id="computerChoice"></span></li>
+						</ul>
+						<div></div>
+					</div>
+					<div id="opt">
+						<p>Choose one of the options:</p>
+						<button id="paperButton">Paper</button>
+						<button id="scissorsButton">Scissors</button>
+						<button id="rockButton">Rock</button>
+					</div>
+				</article>
+				<article id="score">
+					<table>
+						<tr id="h">
+							<th rowspan="2">Player</th>
+							<th colspan="9">Round</th>
+							<th rowspan="2">Score</th>
+						</tr>
+						<tr id="n">
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>You</td>
+							<td id="p1"></td>
+							<td id="p2"></td>
+							<td id="p3"></td>
+							<td id="p4"></td>
+							<td id="p5"></td>
+							<td id="p6"></td>
+							<td id="p7"></td>
+							<td id="p8"></td>
+							<td id="p9"></td>
+							<td id="playerScore"></td>
+						</tr>
+						<tr>
+							<td>Computer</td>
+							<td id="c1"></td>
+							<td id="c2"></td>
+							<td id="c3"></td>
+							<td id="c4"></td>
+							<td id="c5"></td>
+							<td id="c6"></td>
+							<td id="c7"></td>
+							<td id="c8"></td>
+							<td id="c9"></td>
+							<td id="computerScore"></td>
+						</tr>
+					</table>
+				</article>
+				<p id="reset">Do you want to play again?</p>
+			</section>
 			<footer>
 				<p>You can find more projects on my <a href="https://github.com/coder36459" target="_blank">GitHub</a>. If you want to find out more about me, take a look on <a href="https://www.linkedin.com/in/maciej-browarski" target="_blank">LinkedIn</a>.</p>
 			</footer>
 		</main>
-		<script src="script.js"></script><noscript>Your browser does not support JavaScript!</noscript>
+		<script src="script.js"></script>
+		<noscript>Your browser does not support JavaScript!</noscript>
 	</body>
 </html>
